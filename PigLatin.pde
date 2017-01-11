@@ -1,7 +1,10 @@
 import java.util.*;
-
+String n = new String();
 public void setup() {
 	String lines[] = loadStrings("LowellHymn.txt");
+	for (int i = 0; i < lines.length; i++){
+		if (lines.substring(i,i+1).equals(" ")
+	}
 	System.out.println("there are " + lines.length + " lines");
 	for (int i = 0 ; i < lines.length; i++) {
 	  System.out.println(pigLatin(lines[i]));
